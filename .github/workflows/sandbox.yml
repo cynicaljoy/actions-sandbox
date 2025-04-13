@@ -1,0 +1,13 @@
+name: Sandbox
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/sandbox.yml
+
+jobs:
+  sandbox:
+    uses: ./.github/workflows/_foobar.yml
+    with:
+      foobar: "Hello, World!"

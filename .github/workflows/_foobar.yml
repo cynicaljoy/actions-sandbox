@@ -1,0 +1,13 @@
+on:
+  workflow_call:
+    inputs:
+      foobar:
+        description: 'foobar'
+        required: true
+        type: string
+jobs:
+  foobar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: foobar
+        run: echo ${{ inputs.foobar }}
