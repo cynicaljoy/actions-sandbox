@@ -1,0 +1,15 @@
+on:
+  workflow_call:
+    inputs:
+      runs-on:
+        required: true
+        type: string
+        description: The runner to use for this job.
+        default: ubuntu-latest
+
+jobs:
+  moshi:
+    runs-on: ${{ input.runs-on }}
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
