@@ -14,4 +14,4 @@ jobs:
       - name: foobar
         run: echo ${{ inputs.foobar }}
 
-      - uses: ./.github/actions/moshi.yml
+      - uses: ./.github/actions/moshi/
