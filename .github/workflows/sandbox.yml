@@ -5,6 +5,8 @@ on:
       - main
     paths:
       - .github/workflows/sandbox.yml
+      - .github/workflows/_foobar.yml
+      - .github/actions/moshi.yml
 
 jobs:
   sandbox:
