@@ -6,7 +6,7 @@ on:
     paths:
       - .github/workflows/sandbox.yml
       - .github/workflows/_foobar.yml
-      - .github/actions/moshi.yml
+      - .github/actions/moshi/*
 
 jobs:
   sandbox:
