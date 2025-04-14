@@ -1,11 +1,11 @@
 on:
   workflow_call:
 
-jobs:
-  moshi:
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
 
-      - name: Hello World
-        run: echo "Hello World"
+    - name: Hello World
+      run: echo "Hello World"
