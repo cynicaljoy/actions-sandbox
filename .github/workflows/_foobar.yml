@@ -9,6 +9,8 @@ jobs:
   foobar:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: foobar
         run: echo ${{ inputs.foobar }}
 
