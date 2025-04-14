@@ -3,10 +3,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - .github/workflows/sandbox.yml
-      - .github/workflows/_foobar.yml
-      - .github/actions/moshi/*
 
 jobs:
   sandbox:
