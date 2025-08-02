@@ -8,4 +8,4 @@ jobs:
   sandbox:
     uses: ./.github/workflows/_foobar.yml
     with:
-      foobar: "Hello, World!"
+      foobar: "Hello, World! Moshi"
